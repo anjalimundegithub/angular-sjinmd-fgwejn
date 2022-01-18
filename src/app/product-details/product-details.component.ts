@@ -17,6 +17,6 @@ export class ProductDetailsComponent implements OnInit {
     const productId = Number(routerParams.get('productId'));
     // find product
 
-    const product = products.find((product) => product.id === productId);
+    this.product = products.find((product) => product.id === productId);
   }
 }
